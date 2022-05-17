@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.css';
 import { getAsynccontinents } from './redux/continents/continents';
 
 function App() {
-  useEffect(getAsynccontinents());
+  const dispatch = useDispatch();
+  getAsynccontinents(dispatch);
 
   return (
     <>My App</>

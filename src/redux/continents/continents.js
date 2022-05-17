@@ -6,7 +6,7 @@ const reducer = (state = [],
     default: return state;
   }
 };
-const BASE_URL = 'https://covid-api.mmediagroup.fr/v1/vaccines';
+export const BASE_URL = 'https://covid-api.mmediagroup.fr/v1/vaccines';
 
 const getContinents = (continents) => ({ type: GET_CONTINENTS, continents });
 
