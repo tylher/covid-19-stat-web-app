@@ -19,18 +19,20 @@ export const getAsynccontinents = () => (dispatch) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      const continentsData = {};
+      const continents = [];
+      let continentsData = [];
       const keys = Object.keys(data);
       keys.forEach((i) => {
         const { continent, people_vaccinated: peopleVaccinated } = data[i].All;
-        if (continentsData[continent]) {
-          continentsData[continent]
+        if (continents[continent]) {
+          continents[continent]
             += peopleVaccinated;
         } else {
-          continentsData[continent] = peopleVaccinated;
+          continents[continent] = peopleVaccinated;
         }
-        dispatch(getContinents(continentsData));
       });
+      continentsData = Object.entries(continents).map(([key, value]) => ({ name: key, value }));
+      dispatch(getContinents(continentsData));
     });
 };
 
