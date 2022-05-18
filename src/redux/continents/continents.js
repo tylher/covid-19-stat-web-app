@@ -19,7 +19,7 @@ export const getAsynccontinents = () => (dispatch) => {
   })
     .then((res) => res.json())
     .then((data) => {
-      const continentsData = [];
+      const continentsData = {};
       const keys = Object.keys(data);
       keys.forEach((i) => {
         const { continent, people_vaccinated: peopleVaccinated } = data[i].All;

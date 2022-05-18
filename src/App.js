@@ -1,13 +1,16 @@
 import { useDispatch } from 'react-redux';
 import './App.css';
+import Continents from './components/continents/Continents';
 import { getAsynccontinents } from './redux/continents/continents';
 
 function App() {
   const dispatch = useDispatch();
-  getAsynccontinents(dispatch);
+  dispatch(getAsynccontinents());
 
   return (
-    <>My App</>
+    <>
+      <Continents />
+    </>
   );
 }
 
