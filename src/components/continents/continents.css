@@ -5,10 +5,10 @@
 }
 .img-box{
     width: 60%;
-    background-color: rgb(252, 101, 164);
+    background-color: rgb(253, 84, 149);
 }
 
-img{
+.img-box>img{
     width: 100%;
     margin: auto;
     filter: opacity(0.4) brightness(0.7) contrast(200%);

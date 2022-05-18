@@ -5,13 +5,19 @@ const GET_COUNTRIES = 'GET_COUNTRIES';
 const reducer = (state = [], action) => {
   switch (action.type) {
     case GET_COUNTRIES:
-      return action.data.filter((country) => country.continent === action.continent);
-
-    default: return state;
+      return action.data.filter(
+        (country) => country.continent === action.continent,
+      );
+    default:
+      return state;
   }
 };
 
-const getCountries = (continent, data) => ({ type: GET_COUNTRIES, continent, data });
+export const getCountries = (continent, data) => ({
+  type: GET_COUNTRIES,
+  continent,
+  data,
+});
 
 export const getCountriesData = (continent) => (dispatch) => {
   fetch(BASE_URL, {
@@ -24,7 +30,7 @@ export const getCountriesData = (continent) => (dispatch) => {
     .then((data) => {
       const countriesData = [];
       const keys = Object.keys(data);
-      keys.forEach((i) => {
+      keys.map((i) => {
         const {
           continent,
           people_vaccinated: peopleVaccinated,
@@ -32,6 +38,7 @@ export const getCountriesData = (continent) => (dispatch) => {
           administered,
           population,
           life_expectancy: lifeExpectancy,
+          country,
         } = data[i].All;
         countriesData.push({
           continent,
@@ -40,7 +47,9 @@ export const getCountriesData = (continent) => (dispatch) => {
           administered,
           population,
           lifeExpectancy,
+          country,
         });
+        return '';
       });
       dispatch(getCountries(continent, countriesData));
     });

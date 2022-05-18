@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Continents />} />
-        <Route path="/countries/:country" element={<Countries />} />
+        <Route path="/countries/:continent" element={<Countries />} />
       </Routes>
     </>
   );

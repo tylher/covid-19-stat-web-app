@@ -12,22 +12,24 @@ const Continents = () => {
       <div className="img-box">
         <img src={world} alt="" />
       </div>
-
-      {continentsList.map((continent) => {
-        const { name, value, id } = continent;
-        if (name !== 'undefined') {
-          return (
-            <div key={id}>
-              <h2>{name}</h2>
-              <p>{value}</p>
-              <NavLink to={`/countries/${name}`}>
-                <BsArrowRightCircle />
-              </NavLink>
-            </div>
-          );
-        }
-        return '';
-      })}
+      <div>
+        <h4>STATS BY CONTINENTS</h4>
+        {continentsList.map((continent) => {
+          const { name, value, id } = continent;
+          if (name !== 'undefined') {
+            return (
+              <div key={id}>
+                <h2>{name}</h2>
+                <p>{value}</p>
+                <NavLink to={`/countries/${name}`}>
+                  <BsArrowRightCircle />
+                </NavLink>
+              </div>
+            );
+          }
+          return '';
+        })}
+      </div>
     </div>
   );
 };
