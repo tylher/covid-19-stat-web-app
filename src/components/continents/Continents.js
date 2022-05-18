@@ -1,13 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './continents.css';
 import { NavLink } from 'react-router-dom';
 import world from '../../images/world2.png';
 
-const Continents = (props) => {
-  const { id } = props;
+const Continents = () => {
   const continentsList = useSelector((state) => state.continents);
   return (
     <div className="container">
@@ -16,13 +14,13 @@ const Continents = (props) => {
       </div>
 
       {continentsList.map((continent) => {
-        const { name, value } = continent;
+        const { name, value, id } = continent;
         if (name !== 'undefined') {
           return (
             <div key={id}>
               <h2>{name}</h2>
               <p>{value}</p>
-              <NavLink to="/countries">
+              <NavLink to={`/countries/${name}`}>
                 <BsArrowRightCircle />
               </NavLink>
             </div>
@@ -32,10 +30,6 @@ const Continents = (props) => {
       })}
     </div>
   );
-};
-
-Continents.propTypes = {
-  id: PropTypes.string.isRequired,
 };
 
 export default Continents;

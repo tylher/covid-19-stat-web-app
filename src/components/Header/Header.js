@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div>
       <nav>
-        {location.pathname === '/countries' ? (
+        {location.pathname.includes('countries') ? (
           <NavLink to="/">
             <MdArrowBackIosNew style={iconStyle} />
           </NavLink>
