@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './continents.css';
+import { NavLink } from 'react-router-dom';
 import world from '../../images/world2.png';
 
 const Continents = (props) => {
@@ -21,7 +22,9 @@ const Continents = (props) => {
             <div key={id}>
               <h2>{name}</h2>
               <p>{value}</p>
-              <BsArrowRightCircle onClick={() => console.log('clicked')} />
+              <NavLink to="/countries">
+                <BsArrowRightCircle />
+              </NavLink>
             </div>
           );
         }
