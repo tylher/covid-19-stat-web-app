@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router';
 import './App.css';
 import Continents from './components/continents/Continents';
-import Countries from './components/countries/Countries';
+import Countries from './components/countries/countries';
 import Header from './components/Header/Header';
 import { getAsynccontinents } from './redux/continents/continents';
 
