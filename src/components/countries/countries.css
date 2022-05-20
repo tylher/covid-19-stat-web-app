@@ -1,41 +1,41 @@
-.flag-img{
-    max-width: 100%;
-    margin: auto;
+.flag-img {
+  max-width: 100%;
+  margin: auto;
 }
 
-.continent-headline{
-    background-color: rgb(247, 71, 138);
-    padding: 20px 10% ;
-    display: flex;
-    align-items: center;
-    gap: 50px;
+.continent-headline {
+  background-color: rgb(247, 71, 138);
+  padding: 20px 10%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
-.continent-container{
-   background-color: rgb(250, 46, 124);
+.continent-container {
+  background-color: rgb(250, 46, 124);
 }
 
-.continent-container>h3{
+.continent-container > h3 {
   color: #fff;
   padding: 10px 20px;
 }
 
-.headline-text-box{
-    color: #fff;
-    font-size: 30px;
+.headline-text-box {
+  color: #fff;
+  font-size: 30px;
 }
 
-.headline-img{
-    max-width: 50%;
-    filter: opacity(0.4) brightness(0.3) contrast(100%);
+.headline-img {
+  max-width: 50%;
+  filter: opacity(0.4) brightness(0.3) contrast(100%);
 }
 
-.countries-row{
+.countries-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.country-card{
+.country-card {
   background-color: rgb(202, 29, 95);
   display: flex;
   flex-direction: column;
@@ -55,11 +55,11 @@
   background-color: rgb(170, 25, 80);
 }
 
-.flag-img-box{
-    height: 70%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+.flag-img-box {
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,8 +80,8 @@
     background-color: rgb(170, 25, 80);
   }
 
-  .headline-text-box{
-      font-size: 20px;
+  .headline-text-box {
+    font-size: 20px;
   }
 }
 

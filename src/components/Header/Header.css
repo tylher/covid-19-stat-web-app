@@ -1,23 +1,23 @@
-.header-container{
-    background-color: rgb(212, 72, 126);
-    color: white;
+.header-container {
+  background-color: rgb(212, 72, 126);
+  color: white;
 }
 
-.header-container nav{
-    padding: 20px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: center;
+.header-container nav {
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
 }
 
-.header-container nav>h2{
-    font-weight: 300;
-    font-size: 25px;
+.header-container nav > h2 {
+  font-weight: 300;
+  font-size: 25px;
 }
 
-.icon-grp{
-    display: flex;
-    gap: 30px
+.icon-grp {
+  display: flex;
+  gap: 30px;
 }

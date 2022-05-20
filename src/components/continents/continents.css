@@ -22,6 +22,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .img-box {
   width: 60%;
   background-color: rgb(247, 71, 138);
@@ -33,7 +34,7 @@
   filter: opacity(0.4) brightness(0.3) contrast(100%);
 }
 
-.text-box{
+.text-box {
   font-size: 30px;
   color: white;
 }
@@ -99,7 +100,7 @@
     background-color: rgb(170, 25, 80);
   }
 
-  .text-box{
+  .text-box {
     font-size: 20px;
   }
 }
