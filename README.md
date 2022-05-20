@@ -25,7 +25,7 @@
 > |     | ![Screenshot1](./src/images/Homepage_Screenshot.png) | ![Screenshot2](./src/images/continent-section.png) |
 
 ## video Presentation
-[View video presentation here]()
+[View video presentation here](https://www.loom.com/share/91e9e66011154d1baf2b3b10e2f48cdd)
 
 ## Getting Started
 

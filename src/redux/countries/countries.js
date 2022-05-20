@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import { BASE_URL } from '../continents/continents';
 
 const GET_COUNTRIES = 'GET_COUNTRIES';
@@ -41,6 +42,7 @@ export const getCountriesData = (continent) => (dispatch) => {
           country,
         } = data[i].All;
         countriesData.push({
+          id: uuidv4(),
           continent,
           peopleVaccinated,
           peoplePartiallyVaccinated,
