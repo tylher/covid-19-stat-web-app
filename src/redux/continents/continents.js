@@ -22,20 +22,13 @@ const reducer = (state = [], action) => {
   switch (action.type) {
     case GET_CONTINENTS:
       return action.continents;
-    case ADD_MAPS:
-      return state.map((item) => {
-        const { mapUrl } = mapState.find(
-          (mapItem) => mapItem.name === item.name,
-        );
-        return { ...item, mapUrl };
-      });
     default:
       return state;
   }
 };
 export const BASE_URL = 'https://covid-api.mmediagroup.fr/v1/vaccines';
 
-const getContinents = (continents) => ({ type: GET_CONTINENTS, continents });
+export const getContinents = (continents) => ({ type: GET_CONTINENTS, continents });
 
 export const getAsynccontinents = () => (dispatch) => {
   fetch(BASE_URL, {
@@ -63,6 +56,7 @@ export const getAsynccontinents = () => (dispatch) => {
         value,
       }));
       dispatch(getContinents(continentsData));
+      return continentsData;
     });
 };
 
