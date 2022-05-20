@@ -41,7 +41,7 @@ You need to have a browser and this tools installed:
 To get a local copy up and running follow these simple example steps:
 
 ```
-$ git clone git@github.com:jssol/Covid-19-stat-webapp.git
+$ git clone git@github.com:tylher/covid-19-stat-web-app.git
 ```
 
 ```
