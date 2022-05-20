@@ -16,7 +16,7 @@
   > rest API
 
 ## live
-[View live demo here]()
+[View live demo here](https://covid-19-stat-web-app.netlify.app/)
 
 >  This is the page view:
 
