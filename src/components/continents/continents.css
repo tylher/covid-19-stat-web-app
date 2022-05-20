@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  background-color: rgb(250, 46, 124);
+}
+
+.continents-section > h3 {
+  padding: 8px 20px;
+  color: #fff;
+}
+
+.headline {
+  background-color: rgb(247, 71, 138);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img-box {
+  width: 60%;
+  background-color: rgb(247, 71, 138);
+}
+
+.img-box > img {
+  width: 100%;
+  margin: auto;
+  filter: opacity(0.4) brightness(0.3) contrast(100%);
+}
+
+.text-box {
+  font-size: 30px;
+  color: white;
+}
+
+.card-holder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: rgb(202, 29, 95);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+}
+
+.card:nth-child(8n + 4),
+.card:nth-child(8n + 2),
+.card:nth-child(8n + 5),
+.card:nth-child(8n + 7) {
+  background-color: rgb(170, 25, 80);
+}
+
+.card > .map-img-box {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-image {
+  max-width: 70%;
+  max-height: 100%;
+  margin: auto;
+  filter: opacity(0.4) brightness(0.7) contrast(200%);
+}
+
+.map-text-box {
+  padding: 10px;
+  text-align: end;
+  min-width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .card-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card:nth-child(8n + 4),
+  .card:nth-child(8n + 2),
+  .card:nth-child(8n + 5),
+  .card:nth-child(8n + 7) {
+    background-color: rgb(247, 36, 117);
+  }
+
+  .card:nth-child(6n + 4),
+  .card:nth-child(6n + 2),
+  .card:nth-child(6n + 6) {
+    background-color: rgb(170, 25, 80);
+  }
+
+  .text-box {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(6n + 4),
+  .card:nth-child(6n + 2),
+  .card:nth-child(6n + 6) {
+    background-color: rgb(247, 36, 117);
+  }
+
+  .card:nth-child(4n + 2),
+  .card:nth-child(4n + 3) {
+    background-color: rgb(170, 25, 80);
+  }
+}
