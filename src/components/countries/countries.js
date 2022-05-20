@@ -17,8 +17,24 @@ const Countries = () => {
   return (
     <div className="continent-container">
       <div className="continent-headline">
-        <img className="headline-img" src={mapState.find((item) => (item.name === name)).mapUrl} alt="" />
+        <img
+          className="headline-img"
+          src={mapState.find((item) => item.name === name).mapUrl}
+          alt=""
+        />
+        <div className="headline-text-box">
+          <h3>{name.toUpperCase()}</h3>
+          <p>
+            {countryList.reduce((total, item) => {
+              let num = total;
+              num += item.peopleVaccinated;
+              return num;
+            }, 0).toLocaleString()}
+          </p>
+          <p>people vaccinated</p>
+        </div>
       </div>
+      <h3>STAT BY COUNTRY</h3>
       <div className="countries-row">
         {countryList.map((item) => {
           const { country, peopleVaccinated } = item;
@@ -32,7 +48,7 @@ const Countries = () => {
                 />
               </div>
               <h4>{country}</h4>
-              <p>{peopleVaccinated}</p>
+              <p>{peopleVaccinated.toLocaleString()}</p>
             </div>
           );
         })}

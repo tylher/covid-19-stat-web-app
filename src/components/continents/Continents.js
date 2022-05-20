@@ -21,9 +21,22 @@ const Continents = () => {
         <div className="img-box">
           <img src={world} alt="" />
         </div>
+        <div className="text-box">
+          <h3>WORLD</h3>
+          <p>
+            {continentsList
+              .reduce((totalVaccination, continent) => {
+                let num = totalVaccination;
+                num += continent.value;
+                return num;
+              }, 0)
+              .toLocaleString()}
+          </p>
+          <p>people vaccinated</p>
+        </div>
       </div>
-      <div>
-        <h4>STATS BY CONTINENTS</h4>
+      <section className="continents-section">
+        <h3>STATS BY CONTINENTS</h3>
         <div className="card-holder">
           {continentsList.map((continent) => {
             const { name, value, id } = continent;
@@ -42,7 +55,7 @@ const Continents = () => {
                   </NavLink>
                   <div className="map-text-box">
                     <h2>{name}</h2>
-                    <p>{value}</p>
+                    <p>{value.toLocaleString()}</p>
                   </div>
                 </div>
               );
@@ -50,7 +63,7 @@ const Continents = () => {
             return '';
           })}
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -7,10 +7,26 @@
     background-color: rgb(247, 71, 138);
     padding: 20px 10% ;
     display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.continent-container{
+   background-color: rgb(250, 46, 124);
+}
+
+.continent-container>h3{
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.headline-text-box{
+    color: #fff;
+    font-size: 30px;
 }
 
 .headline-img{
-    max-width: 40%;
+    max-width: 50%;
     filter: opacity(0.4) brightness(0.3) contrast(100%);
 }
 
@@ -29,6 +45,7 @@
   padding: 20px;
   text-align: end;
   gap: 10px;
+  font-size: 20px;
 }
 
 .country-card:nth-child(8n + 4),
@@ -61,6 +78,10 @@
   .country-card:nth-child(6n + 2),
   .country-card:nth-child(6n + 6) {
     background-color: rgb(170, 25, 80);
+  }
+
+  .headline-text-box{
+      font-size: 20px;
   }
 }
 

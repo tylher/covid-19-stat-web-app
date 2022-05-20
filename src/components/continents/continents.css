@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
-.headline{
+
+.container {
+  background-color: rgb(250, 46, 124);
+}
+
+.continents-section > h3 {
+  padding: 8px 20px;
+  color: #fff;
+}
+
+.headline {
   background-color: rgb(247, 71, 138);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .img-box {
   width: 60%;
@@ -15,6 +31,11 @@
   width: 100%;
   margin: auto;
   filter: opacity(0.4) brightness(0.3) contrast(100%);
+}
+
+.text-box{
+  font-size: 30px;
+  color: white;
 }
 
 .card-holder {
@@ -29,6 +50,7 @@
   align-items: flex-end;
   color: #fff;
   position: relative;
+  font-size: 20px;
 }
 
 .card:nth-child(8n + 4),
@@ -39,11 +61,11 @@
 }
 
 .card > .map-img-box {
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-image {
@@ -53,10 +75,10 @@
   filter: opacity(0.4) brightness(0.7) contrast(200%);
 }
 
-.map-text-box{
-    padding: 10px;
-    text-align: end;
-    width: 60%;
+.map-text-box {
+  padding: 10px;
+  text-align: end;
+  min-width: 60%;
 }
 
 @media screen and (max-width: 768px) {
@@ -75,6 +97,10 @@
   .card:nth-child(6n + 2),
   .card:nth-child(6n + 6) {
     background-color: rgb(170, 25, 80);
+  }
+
+  .text-box{
+    font-size: 20px;
   }
 }
 

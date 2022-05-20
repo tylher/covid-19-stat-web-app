@@ -20,12 +20,12 @@ const Header = () => {
         ) : (
           ''
         )}
-        <h3>
+        <h2>
           {' '}
           {location.pathname === '/'
             ? 'Covid-19 Vaaccination counts'
             : 'Continent Covid-19 vaccination count'}
-        </h3>
+        </h2>
         <div className="icon-grp">
           <IoMdMic style={iconStyle} />
           <MdSettings style={iconStyle} />
