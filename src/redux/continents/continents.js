@@ -56,7 +56,6 @@ export const getAsynccontinents = () => (dispatch) => {
         value,
       }));
       dispatch(getContinents(continentsData));
-      return continentsData;
     });
 };
 

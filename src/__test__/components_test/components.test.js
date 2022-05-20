@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
 import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
+import { BrowserRouter as Router } from 'react-router-dom';
 import store from '../../redux/configureStore';
 import Continents from '../../components/continents/continents';
 import Countries from '../../components/countries/countries';
@@ -33,7 +34,10 @@ describe('test snapshots for all components', () => {
     const tree = renderer
       .create(
         <Provider store={store}>
-          <App />
+          <Router>
+            {' '}
+            <App />
+          </Router>
         </Provider>,
       )
       .toJSON();

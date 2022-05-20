@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test snapshots for all components renders App correctly 1`] = `
+Array [
+  " ",
+  <div
+    className="header-container"
+  >
+    <nav>
+      <h2>
+         
+        Covid-19 Vaaccination counts
+      </h2>
+      <div
+        className="icon-grp"
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": "25px",
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M256 320c37.712 0 68.571-30.924 68.571-68.714V100.714C324.571 62.924 293.712 32 256 32s-68.571 30.924-68.571 68.714v150.572c0 37.79 30.859 68.714 68.571 68.714zm121.139-75.452c0 68.714-58.282 116.815-121.139 116.815s-121.139-48.102-121.139-116.815H96c0 77.873 61.719 143.153 137.144 153.465V480h45.713v-81.987C354.281 386.561 416 322.421 416 244.548h-38.861z"
+          />
+        </svg>
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": "#fff",
+              "fontSize": "25px",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0h24v24H0V0z"
+            fill="none"
+          />
+          <path
+            d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"
+          />
+        </svg>
+      </div>
+    </nav>
+  </div>,
+  <div
+    className="container"
+  >
+    <div
+      className="headline"
+    >
+      <div
+        className="img-box"
+      >
+        <img
+          alt=""
+          src="world2.png"
+        />
+      </div>
+      <div
+        className="text-box"
+      >
+        <h3>
+          WORLD
+        </h3>
+        <p>
+          0
+        </p>
+        <p>
+          people vaccinated
+        </p>
+      </div>
+    </div>
+    <section
+      className="continents-section"
+    >
+      <h3>
+        STATS BY CONTINENTS
+      </h3>
+      <div
+        className="card-holder"
+      />
+    </section>
+  </div>,
+]
+`;
+
+exports[`test snapshots for all components renders Continents page correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="headline"
+  >
+    <div
+      className="img-box"
+    >
+      <img
+        alt=""
+        src="world2.png"
+      />
+    </div>
+    <div
+      className="text-box"
+    >
+      <h3>
+        WORLD
+      </h3>
+      <p>
+        0
+      </p>
+      <p>
+        people vaccinated
+      </p>
+    </div>
+  </div>
+  <section
+    className="continents-section"
+  >
+    <h3>
+      STATS BY CONTINENTS
+    </h3>
+    <div
+      className="card-holder"
+    />
+  </section>
+</div>
+`;
