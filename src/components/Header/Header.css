@@ -1,0 +1,15 @@
+.header-container{
+    background-color: rgb(212, 72, 126);
+    color: white;
+}
+
+.header-container nav{
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-grp{
+    display: flex;
+    gap: 30px
+}

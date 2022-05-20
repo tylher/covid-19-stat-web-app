@@ -1,11 +1,34 @@
 import { v4 as uuidv4 } from 'uuid';
+import asia from '../../images/asia.png';
+import africa from '../../images/africa.png';
+import northAmerica from '../../images/north-america.png';
+import southAmerica from '../../images/south-america.png';
+import europe from '../../images/europe.png';
+import oceania from '../../images/oceania.png';
+
+export const mapState = [
+  { name: 'Asia', mapUrl: asia },
+  { name: 'Africa', mapUrl: africa },
+  { name: 'Europe', mapUrl: europe },
+  { name: 'South America', mapUrl: southAmerica },
+  { name: 'North America', mapUrl: northAmerica },
+  { name: 'Oceania', mapUrl: oceania },
+];
 
 const GET_CONTINENTS = 'GET_CONTINENTS';
+const ADD_MAPS = 'ADD_MAPS';
 
 const reducer = (state = [], action) => {
   switch (action.type) {
     case GET_CONTINENTS:
       return action.continents;
+    case ADD_MAPS:
+      return state.map((item) => {
+        const { mapUrl } = mapState.find(
+          (mapItem) => mapItem.name === item.name,
+        );
+        return { ...item, mapUrl };
+      });
     default:
       return state;
   }
@@ -42,5 +65,9 @@ export const getAsynccontinents = () => (dispatch) => {
       dispatch(getContinents(continentsData));
     });
 };
+
+export const addMaps = () => ({
+  type: ADD_MAPS,
+});
 
 export default reducer;
